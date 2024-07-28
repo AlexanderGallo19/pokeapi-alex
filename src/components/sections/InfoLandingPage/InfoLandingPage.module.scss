@@ -1,0 +1,118 @@
+
+
+
+.container {
+    width: 100%;
+    height: 420px;
+    padding-bottom: 10px;
+    background-color: #78ADA6;
+   
+
+    &__title {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 20px;
+
+        & h1 {
+            font-size: 48px;
+            font-weight: bold;
+            color: #FFFFFF;
+        }
+    }
+
+    &__description {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        width: 100%;
+      
+
+        & p {
+            font-size: 32px;
+            font-weight: 300;
+            color: #FFFFFF;
+        }
+
+        &_button {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 430px;
+        }
+    }
+
+    @media screen and (max-width: 840px) {
+
+        height: 380px;
+
+        &__title {
+
+            & h1 {
+                font-size: 32px;
+            }
+        }
+
+        &__description {
+            gap: 0px;
+
+            &_button {
+                width: 360px;
+            }
+
+            & p {
+                font-size: 24px;
+            }
+        }
+    }
+
+
+    @media screen and (max-width: 660px) {
+        &__title  {
+            &_imgbulbasur {
+                width: 120px;
+                height: 100px;
+            }
+        }
+
+        &__description {
+            align-items: center;
+
+            
+
+            &_imgdewjemg {
+                width: 130px;
+                height: 110px;
+            }
+        } 
+    }
+
+
+    @media screen and (max-width: 431px) {
+
+        height: 380px;
+
+        &__title {
+
+            & h1 {
+                font-size: 24px;
+            }
+        }
+
+        &__description {
+
+            &_button {
+                width: 220px;
+            }
+
+            & p {
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+
+
+
+

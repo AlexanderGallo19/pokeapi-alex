@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.container {
+    display: flex;
+    gap: 30px;
+    width: 100%;
+    height: 65px;
+    background-color: #201E43;
+    font-family: "Roboto", sans-serif;
+
+    & img {
+        cursor: pointer;
+    }
+
+    &__logo {
+        display: flex;
+    }
+
+    &__logoresponsive {
+        display: none;
+    }
+
+    &__ul {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 50px;
+        width: 100%;
+        padding: 10px;
+        margin: 0;
+
+        &_linkpokemons {
+            width: fit-content;
+            padding: 10px;
+            font-size: 16px;
+            color: #FFFFFF;
+            text-decoration: none;
+        }
+        
+        &_linksfull {
+            padding: 10px;
+            font-size: 16px;
+            color: #FFFFFF;
+            text-decoration: none;
+        }
+
+        &_linksfull:hover, &_linkpokemons:hover {
+            padding: 10px;
+            border: 2px solid #FFFFFF;
+            border-radius: 20px;
+        }
+    }
+
+   
+
+    @media screen and (max-width: 990px) {
+        
+        &__ul {
+            justify-content: space-between;
+        }
+
+        &__ul_linksfull {
+            display: none;
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        &__logo  {
+            display: none;
+        }
+
+        &__logoresponsive {
+            display: flex;
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        &__ul {
+            gap: 10px;
+        }
+    }
+}
+
+
+
+
+ 

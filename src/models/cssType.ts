@@ -1,0 +1,1 @@
+export type cssVar = Record< string, string | undefined >;

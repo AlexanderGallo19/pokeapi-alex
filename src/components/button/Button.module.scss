@@ -1,0 +1,12 @@
+
+.container {
+    width: fit-content;
+    padding: 10px;
+    border: var(--border , 2px solid #201E43);
+    border-radius: 20px;
+    background-color: var( --bg-color, #FFFFFF );
+    font-size: var(--font-size, 16px);
+    font-family: var(--font-family, "Roboto");
+    color: var(--color, #201E43);
+    cursor: pointer;
+}

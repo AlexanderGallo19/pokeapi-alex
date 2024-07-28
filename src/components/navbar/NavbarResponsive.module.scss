@@ -1,0 +1,47 @@
+.container {
+    display: none;
+
+    &__linksresponsive {
+        display: none;
+    }
+
+
+    
+}
+
+@media screen and (max-width: 990px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        position: relative;
+        z-index: 10;
+        
+
+        & svg {
+            color: #FFFFFF;
+            width: 40px;
+            height: 40px;
+        }
+
+
+        &__linksresponsive {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            width: 300px;
+            top: 80px;
+            transition: all 1s ease-out;
+
+
+            & a {
+                padding: 10px;
+                font-size: 16px;
+                color: #201E43;
+                text-decoration: none;
+                text-align: end;
+            }
+        }
+    }
+}
