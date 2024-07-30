@@ -15,7 +15,7 @@ const InfoLandingPage = () => {
       <div className={ styles.container__description }>
         <div className={styles.container__description_button}>
             <p>Select your favorite pokemon and explore its abilities</p>
-            <Button children='See Pokemons' />
+            <Button children='See Pokemons' route='/pokemons'/>
         </div>
         <img 
           className={ styles.container__description_imgdewjemg }

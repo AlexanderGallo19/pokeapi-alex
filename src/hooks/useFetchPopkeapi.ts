@@ -1,6 +1,9 @@
 import { useEffect, useState } from "react"
 
 
+
+const localCache: { [key: string]: any } = {};
+
 interface FetchData<T>{
     data?: T,
     isLoading: boolean,
@@ -17,17 +20,37 @@ function useFetchPopkeapi<T>( url: string ) {
     const [state, setState] = useState<FetchData<T>>({
         isLoading: true,
         hasError: false,
-    })
+    });
 
 
     useEffect(() => {
       getFetch()
-    }, [url])
+    }, [url]);
     
+
+    const setLoadingState = () => {
+        setState({
+            isLoading: true,
+            hasError: false,
+        });
+      }
 
 
     const getFetch = async () => {
+
+        if (localCache[url]) {
+            setState({
+                data: localCache[url],
+                isLoading: false,
+                hasError: false
+            })
+            return;
+        }
         
+        setLoadingState();
+
+        await new Promise((resolve) => setTimeout(resolve, 0.500));
+
         const response = await fetch(url);
 
         if (!response.ok) {
@@ -50,7 +73,10 @@ function useFetchPopkeapi<T>( url: string ) {
             data: data,
             isLoading: false,
             hasError: false,
-        })
+        });
+
+
+        localCache[url] = data;
 
     }
 
