@@ -2,7 +2,7 @@ import { useEffect, useState } from "react"
 
 
 
-const localCache: { [key: string]: any } = {};
+const localCache: Record<string, unknown> = {};
 
 interface FetchData<T>{
     data?: T,
@@ -14,10 +14,10 @@ interface FetchData<T>{
     }
 }
 
+function useFetchPopkeapi<T extends object>( url: string ) {
 
-function useFetchPopkeapi<T>( url: string ) {
 
-    const [state, setState] = useState<FetchData<T>>({
+    const [fetchResponse, setFetchResponse] = useState<FetchData<T>>({
         isLoading: true,
         hasError: false,
     });
@@ -29,7 +29,7 @@ function useFetchPopkeapi<T>( url: string ) {
     
 
     const setLoadingState = () => {
-        setState({
+        setFetchResponse({
             isLoading: true,
             hasError: false,
         });
@@ -39,8 +39,8 @@ function useFetchPopkeapi<T>( url: string ) {
     const getFetch = async () => {
 
         if (localCache[url]) {
-            setState({
-                data: localCache[url],
+            setFetchResponse({
+                data: localCache[url] as T,
                 isLoading: false,
                 hasError: false
             })
@@ -49,12 +49,10 @@ function useFetchPopkeapi<T>( url: string ) {
         
         setLoadingState();
 
-        await new Promise((resolve) => setTimeout(resolve, 0.500));
-
         const response = await fetch(url);
 
         if (!response.ok) {
-            setState({
+            setFetchResponse({
                 data: {} as T,
                 isLoading: false,
                 hasError: true,
@@ -69,7 +67,7 @@ function useFetchPopkeapi<T>( url: string ) {
 
         const data = await response.json();
 
-        setState({
+        setFetchResponse({
             data: data,
             isLoading: false,
             hasError: false,
@@ -81,7 +79,7 @@ function useFetchPopkeapi<T>( url: string ) {
     }
 
 
-  return state
+  return fetchResponse;
 }
 
-export default useFetchPopkeapi
+export default useFetchPopkeapi;

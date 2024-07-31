@@ -2,6 +2,23 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 40px;
     padding: 20px;
+
+    &__button {
+        padding: 10px;
+        border: none;
+        border-radius: 20px;
+        background-color: #201E43;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: 700;
+        color: #FFFFFF;
+
+        &:hover {
+            background-color: #86d991;
+            transition: all 0.3s ease-in;
+        }
+    }
 }
 

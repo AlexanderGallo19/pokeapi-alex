@@ -2,14 +2,13 @@ import { ChangeEvent, useState } from "react"
 
 
 
-interface FormState<T> {
-    formState: T
+interface UseFormReturnType<T> {
+  formState: T;
+  handleInputChange: (event: ChangeEvent<HTMLInputElement>) => void;
+  handleResetInput: () => void;
 }
 
-
-function useForm<T>( initialState: T )  {
-
-
+function useForm<T>( initialState: T ): UseFormReturnType<T>  {
 
     const [formState, setFormState] = useState<T>( initialState );
 
@@ -23,11 +22,9 @@ function useForm<T>( initialState: T )  {
         
     }
 
-
     const handleResetInput = () => {
         setFormState( initialState );
     }
-
 
   return {
     ...formState,

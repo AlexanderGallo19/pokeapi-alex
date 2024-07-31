@@ -1,38 +1,25 @@
-import { Link } from 'react-router-dom';
-import { cssVar } from '../../models/cssType';
-import { ButtonM } from './Button.model';
-import styles from './Button.module.scss';
+import { Link } from "react-router-dom";
+import { type cssVar } from "../../models/cssType";
+import { type ButtonProps } from "./Button.model";
+import {
+  buttonPrimary,
+  buttonSecondary,
+} from "../../utils/styles/buttonStyles";
+import styles from "./Button.module.scss";
 
-const Button = ({
-     children,
-     route,
-     bgcolor,
-     border,
-     color,
-     fontFamily,
-     fontSize
-}:ButtonM) => {
+const Button = ({ children, config }: ButtonProps) => {
+  const variantOptions: { [key: string]: cssVar } = {
+    buttonPrimary,
+    buttonSecondary,
+  };
 
-
-    const handleStylesButton: cssVar = {
-        "--bg-color": bgcolor,
-        "--border": border,
-        "--color": color,
-        "--font-family": fontFamily,
-        "--font-size": fontSize,
-    }
-
-    
+  const buttonStyles = variantOptions[config.variant];
 
   return (
-    <Link
-        to={route} 
-        className={ styles.container }
-        style={ handleStylesButton }    
-    >
-       { children }
+    <Link to={config.route} className={styles.container} style={buttonStyles}>
+      {children}
     </Link>
-  )
-}
+  );
+};
 
-export default Button
+export default Button;

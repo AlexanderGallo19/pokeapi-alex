@@ -1,10 +1,10 @@
 
-import { Route, Routes } from 'react-router-dom';
-import Navbar from '../components/navbar/Navbar';
-import HomePage from './home/HomePage';
-import PokemonsPage from './pokemonsList/PokemonsPage';
-import PokemonPage from './pokemon/PokemonPage';
-import styles from './Layout.module.scss';
+import { Route, Routes } from "react-router-dom";
+import Navbar from "../components/navbar/Navbar";
+import HomePage from "./home/HomePage";
+import PokemonsPage from "./pokemonsList/PokemonsPage";
+import PokemonPage from "./pokemon/PokemonPage";
+import styles from "./Layout.module.scss";
 
 
 const Layout = () => {
@@ -17,9 +17,9 @@ const Layout = () => {
 
 
       <Routes>
-        <Route path='/' element={ <HomePage /> } />
-        <Route path='/pokemons' element={ <PokemonsPage /> } />
-        <Route path='/pokemons/pokemon/:id' element={ <PokemonPage /> } />
+        <Route path="/" element={ <HomePage /> } />
+        <Route path="/pokemons" element={ <PokemonsPage /> } />
+        <Route path="/pokemons/pokemon/:id" element={ <PokemonPage /> } />
       </Routes>
     </div>
   )
