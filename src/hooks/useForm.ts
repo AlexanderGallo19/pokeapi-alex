@@ -1,16 +1,8 @@
 import { ChangeEvent, useState } from "react"
 
+function useForm( initialState: { [key: string]: string } ) {
 
-
-interface UseFormReturnType<T> {
-  formState: T;
-  handleInputChange: (event: ChangeEvent<HTMLInputElement>) => void;
-  handleResetInput: () => void;
-}
-
-function useForm<T>( initialState: T ): UseFormReturnType<T>  {
-
-    const [formState, setFormState] = useState<T>( initialState );
+    const [formState, setFormState] = useState<{ [key: string]: string }>( initialState );
 
     const handleInputChange = ( event: ChangeEvent<HTMLInputElement> ) => {
         const { name, value } = event.target;

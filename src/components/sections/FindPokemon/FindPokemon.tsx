@@ -2,19 +2,13 @@ import useForm from "../../../hooks/useForm";
 import InputSearch from "../../InputSearch/InputSearch";
 import styles from "./FindPokemon.module.scss";
 
-interface FormInput {
-  name: string;
-}
-
-const initialState: FormInput = {
+const initialState = {
   name: "",
 };
 
 const FindPokemon = () => {
   const { formState, handleInputChange, handleResetInput } =
-    useForm<FormInput>(initialState);
-
-  console.log(formState.name);
+    useForm(initialState);
 
   return (
     <div className={styles.container}>
