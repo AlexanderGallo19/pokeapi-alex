@@ -1,6 +1,6 @@
 import { type SimplePokemon } from "../../models/pokemon/SimplePokemon";
-import styles from "./PokemonsGrid.module.scss";
 import PokemonCard from "./PokemonCard";
+import styles from "./PokemonsGrid.module.scss";
 
 interface Props {
   pokemons?: SimplePokemon[];

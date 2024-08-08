@@ -1,0 +1,11 @@
+.container {
+    height: 15px;
+    border: 1px solid #86D991;
+    background-color: rgb(134, 217, 145, .60); 
+
+    &__fillprogress {
+        height: 100%;
+        background-color: #86D991;
+        transition: widht 0.5 ease-out ;
+    }
+}

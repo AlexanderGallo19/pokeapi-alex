@@ -5,14 +5,6 @@ import styles from "./Navbar.module.scss";
 
 const links: Links[] = [
   {
-    url: "/abilities",
-    name: "Pokemon by ability",
-  },
-  {
-    url: "/types",
-    name: "Pokemon by type",
-  },
-  {
     url: "/favorites",
     name: "Favorites",
   },

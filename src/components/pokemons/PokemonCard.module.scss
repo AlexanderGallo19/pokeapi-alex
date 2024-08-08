@@ -37,6 +37,10 @@
         gap: 40px;
         width: 100%;
 
+        &_icon {
+            cursor: pointer;
+        }
+
         & p {
             font-size: 14px;
             color: #201E43;

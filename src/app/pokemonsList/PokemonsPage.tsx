@@ -1,9 +1,10 @@
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useContext, useEffect, useState } from "react";
 import PokemonsGrid from "../../components/pokemons/PokemonsGrid";
-import FindPokemon from "../../components/sections/FindPokemon/FindPokemon";
+import FindPokemon from "../../components/sections/findPokemon/FindPokemon";
 import useFetchPopkeapi from "../../hooks/useFetchPopkeapi";
 import { type SimplePokemon } from "../../models/pokemon/SimplePokemon";
 import { type PokemonsResponse } from "../../models/pokemon/Pokemons";
+import { PokemonsContext } from "../../context/PokemonsContext";
 import styles from "./PokemonsPage.module.scss";
 
 const OFFSET = 16;
@@ -13,6 +14,14 @@ const PokemonsPage = () => {
     []
   );
   const [offsetPagination, setOffsetPagination] = useState<number>(0);
+
+  const context = useContext(PokemonsContext);
+
+  if (!context) {
+    return <div>Error: Context not available </div>;
+  }
+
+  const { inputConfig, pokemonsFiltered } = context;
 
   const handlePagination = useCallback(() => {
     setOffsetPagination(offsetPagination + OFFSET);
@@ -65,7 +74,13 @@ const PokemonsPage = () => {
       {isLoading ? (
         <p>Loading......</p>
       ) : (
-        <PokemonsGrid pokemons={pokemonsPagination} />
+        <PokemonsGrid
+          pokemons={
+            inputConfig.formState.name === ""
+              ? pokemonsPagination
+              : pokemonsFiltered
+          }
+        />
       )}
 
       <button className={styles.container__button} onClick={handlePagination}>

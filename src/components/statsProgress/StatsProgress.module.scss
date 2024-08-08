@@ -1,0 +1,49 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__indicators {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 20px;
+
+        &_title {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            gap: 10px;
+            width: 300px;
+            text-align: end;
+
+            & h3 {
+                font-size: 32px;
+                font-weight: bold;
+                color: #86D991;
+            }
+
+            & span {
+                font-size: 32px;
+                font-weight: 500;
+                color: #201E43;
+            }
+        }
+
+        &_bar {
+            width: 400px;
+        }
+    }
+
+    @media screen and (max-width: 800px) {
+        &__indicators {
+            flex-direction: column;
+
+            &_title  {
+                justify-content: space-around;
+                width: 100%;
+            }
+        }
+    }
+}

@@ -1,0 +1,50 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: clamp(
+        360px,
+        50%,
+        600px
+    );
+    gap: 30px;
+
+    & button {
+        cursor: pointer;
+        background-color: transparent;
+        border: none;
+
+        & svg {
+            width: 40px;
+            height: 40px;
+            color: #201E43;
+
+            &:hover {
+                color: #86D991;
+                transition: all 0.2s ease-in;
+            }
+        }
+    }
+
+    &__images {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        & img {
+            width: 350px;
+            height: 350px
+        }
+    }
+
+    @media screen and (max-width: 800px ) {
+
+        gap: 5px;
+        &__images {
+                & img {
+                    width: 220px;
+                    height: 220px
+                }
+            }
+    }
+}
