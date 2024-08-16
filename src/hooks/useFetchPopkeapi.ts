@@ -1,6 +1,9 @@
 import { useEffect, useState } from "react"
 
 
+
+const localCache: Record<string, unknown> = {};
+
 interface FetchData<T>{
     data?: T,
     isLoading: boolean,
@@ -11,27 +14,45 @@ interface FetchData<T>{
     }
 }
 
+function useFetchPopkeapi<T extends object>( url: string ) {
 
-function useFetchPopkeapi<T>( url: string ) {
 
-    const [state, setState] = useState<FetchData<T>>({
+    const [fetchResponse, setFetchResponse] = useState<FetchData<T>>({
         isLoading: true,
         hasError: false,
-    })
+    });
 
 
     useEffect(() => {
       getFetch()
-    }, [url])
+    }, [url]);
     
+
+    const setLoadingState = () => {
+        setFetchResponse({
+            isLoading: true,
+            hasError: false,
+        });
+      }
 
 
     const getFetch = async () => {
+
+        if (localCache[url]) {
+            setFetchResponse({
+                data: localCache[url] as T,
+                isLoading: false,
+                hasError: false
+            })
+            return;
+        }
         
+        setLoadingState();
+
         const response = await fetch(url);
 
         if (!response.ok) {
-            setState({
+            setFetchResponse({
                 data: {} as T,
                 isLoading: false,
                 hasError: true,
@@ -46,16 +67,19 @@ function useFetchPopkeapi<T>( url: string ) {
 
         const data = await response.json();
 
-        setState({
+        setFetchResponse({
             data: data,
             isLoading: false,
             hasError: false,
-        })
+        });
+
+
+        localCache[url] = data;
 
     }
 
 
-  return state
+  return fetchResponse;
 }
 
-export default useFetchPopkeapi
+export default useFetchPopkeapi;

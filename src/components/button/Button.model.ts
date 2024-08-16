@@ -1,8 +1,8 @@
-export interface ButtonM {
+
+export interface ButtonProps {
     children: string,
-    bgcolor?: string,
-    border?: string,
-    color?: string,
-    fontFamily?: string,
-    fontSize?: string
+    config: { 
+        variant: string,
+        route: string,
+     }
 }
