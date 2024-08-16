@@ -21,7 +21,7 @@ const FindPokemon = () => {
           onInputChange={inputConfig.handleInputChange}
         />
       </div>
-      <img src="../../../../public/img/charizar.png" alt="Image-charizar" />
+      <img src="/img/charizar.png" alt="Image-charizar" />
     </div>
   );
 };

@@ -16,14 +16,11 @@ const Navbar = () => {
     <nav className={styles.container}>
       <Link className={styles.container__logo} to={"/"}>
         <ToolTip infoText="Home">
-          <img src="../../../public/img/logo.png" alt="Logo-page" />
+          <img src="/img/logo.png" alt="Logo-page" />
         </ToolTip>
       </Link>
       <Link className={styles.container__logoresponsive} to={"/"}>
-        <img
-          src="../../../public/img/pokeball.png"
-          alt="Logo-page-responsive"
-        />
+        <img src="/img/pokeball.png" alt="Logo-page-responsive" />
       </Link>
       <ul className={styles.container__ul}>
         <Link className={styles.container__ul_linkpokemons} to={"/pokemons"}>

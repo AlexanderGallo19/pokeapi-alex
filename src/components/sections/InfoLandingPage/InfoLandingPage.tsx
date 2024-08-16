@@ -7,7 +7,7 @@ const InfoLandingPage = () => {
       <div className={styles.container__title}>
         <img
           className={styles.container__title_imgbulbasur}
-          src="../../../public/img/bulbasaur.png"
+          src="/img/bulbasaur.png"
           alt="Image-bulbasur"
         />
         <h1>Immerse yourself in the world of pokemons!</h1>
@@ -25,7 +25,7 @@ const InfoLandingPage = () => {
         </div>
         <img
           className={styles.container__description_imgdewjemg}
-          src="../../../public/img/dewjemg.png"
+          src="img/dewjemg.png"
           alt="Image-dewjemg"
         />
       </div>
