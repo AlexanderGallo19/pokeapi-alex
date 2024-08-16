@@ -13,10 +13,14 @@
 
     & img {
         cursor: pointer;
+        width: 170px;
+        height: 65px;
     }
 
     &__logo {
         display: flex;
+        width: 175px;
+        height: 65px;
     }
 
     &__logoresponsive {
@@ -67,6 +71,8 @@
 
         &__logoresponsive {
             display: flex;
+            width: 60px;
+            height: 60px;
         }
     }
 

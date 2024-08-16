@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1723749112320" clover="3.2.0">
+  <project timestamp="1723749112321" name="All files">
+    <metrics statements="267" coveredstatements="257" conditionals="76" coveredconditionals="58" methods="62" coveredmethods="57" elements="405" coveredelements="372" complexity="0" loc="267" ncloc="267" packages="20" files="24" classes="24"/>
+    <package name="app.favorites">
+      <metrics statements="9" coveredstatements="9" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1"/>
+      <file name="FavoritesPage.tsx" path="/Users/alexander.gallo/Documents/React-practices/Pokemon-proyect/landing-pokemon/src/app/favorites/FavoritesPage.tsx">
+        <metrics statements="9" coveredstatements="9" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="23" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="app.pokemon">
+      <metrics statements="14" coveredstatements="14" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="2"/>
+      <file name="PokemonPage.tsx" path="/Users/alexander.gallo/Documents/React-practices/Pokemon-proyect/landing-pokemon/src/app/pokemon/PokemonPage.tsx">
+        <metrics statements="14" coveredstatements="14" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="2"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="10" count="3" type="stmt"/>
+        <line num="12" count="3" type="stmt"/>
+        <line num="16" count="3" type="cond" truecount="1" falsecount="0"/>
+        <line num="18" count="2" type="cond" truecount="1" falsecount="0"/>
+        <line num="20" count="1" type="stmt"/>
+        <line num="25" count="2" type="stmt"/>
+        <line num="40" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="app.pokemonsList">
+      <metrics statements="36" coveredstatements="34" conditionals="11" coveredconditionals="7" methods="7" coveredmethods="6"/>
+      <file name="PokemonsPage.tsx" path="/Users/alexander.gallo/Documents/React-practices/Pokemon-proyect/landing-pokemon/src/app/pokemonsList/PokemonsPage.tsx">
+        <metrics statements="36" coveredstatements="34" conditionals="11" coveredconditionals="7" methods="7" coveredmethods="6"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="2" count="2" type="stmt"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="4" count="2" type="stmt"/>
+        <line num="7" count="2" type="stmt"/>
+        <line num="8" count="2" type="stmt"/>
+        <line num="10" count="2" type="stmt"/>
+        <line num="12" count="2" type="stmt"/>
+        <line num="13" count="8" type="stmt"/>
+        <line num="16" count="8" type="stmt"/>
+        <line num="18" count="8" type="stmt"/>
+        <line num="20" count="8" type="cond" truecount="0" falsecount="1"/>
+        <line num="21" count="0" type="stmt"/>
+        <line num="24" count="8" type="stmt"/>
+        <line num="26" count="8" type="stmt"/>
+        <line num="27" count="0" type="stmt"/>
+        <line num="30" count="8" type="stmt"/>
+        <line num="34" count="8" type="stmt"/>
+        <line num="35" count="4" type="stmt"/>
+        <line num="36" count="4" type="stmt"/>
+        <line num="38" count="4" type="stmt"/>
+        <line num="39" count="2" type="cond" truecount="1" falsecount="0"/>
+        <line num="40" count="2" type="stmt"/>
+        <line num="41" count="2" type="stmt"/>
+        <line num="45" count="4" type="stmt"/>
+        <line num="48" count="8" type="stmt"/>
+        <line num="49" count="4" type="stmt"/>
+        <line num="51" count="4" type="cond" truecount="5" falsecount="0"/>
+        <line num="52" count="2" type="stmt"/>
+        <line num="57" count="4" type="stmt"/>
+        <line num="60" count="8" type="stmt"/>
+        <line num="61" count="4" type="stmt"/>
+        <line num="66" count="8" type="stmt"/>
+        <line num="67" count="4" type="stmt"/>
+        <line num="70" count="8" type="stmt"/>
+        <line num="93" count="2" type="stmt"/>
+      </file>
+    </package>
+    <package name="components.InputSearch">
+      <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="InputSearch.tsx" path="/Users/alexander.gallo/Documents/React-practices/Pokemon-proyect/landing-pokemon/src/components/InputSearch/InputSearch.tsx">
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="1" count="3" type="stmt"/>
+        <line num="8" count="3" type="stmt"/>
+        <line num="9" count="10" type="stmt"/>
+        <line num="21" count="3" type="stmt"/>
+      </file>
+    </package>
+    <package name="components.button">
+      <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="Button.tsx" path="/Users/alexander.gallo/Documents/React-practices/Pokemon-proyect/landing-pokemon/src/components/button/Button.tsx">
+        <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="1" count="9" type="stmt"/>
+        <line num="4" count="9" type="stmt"/>
+        <line num="9" count="9" type="stmt"/>
+        <line num="11" count="9" type="stmt"/>
+        <line num="12" count="13" type="stmt"/>
+        <line num="18" count="13" type="stmt"/>
+        <line num="20" count="13" type="stmt"/>
+        <line num="32" count="9" type="stmt"/>
+      </file>
+    </package>
+    <package name="components.navbar">
+      <metrics statements="19" coveredstatements="17" conditionals="2" coveredconditionals="1" methods="5" coveredmethods="3"/>
+      <file name="Navbar.tsx" path="/Users/alexander.gallo/Documents/React-practices/Pokemon-proyect/landing-pokemon/src/components/navbar/Navbar.tsx">
+        <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="33" count="1" type="stmt"/>
+        <line num="47" count="1" type="stmt"/>
+      </file>
+      <file name="NavbarResponsive.tsx" path="/Users/alexander.gallo/Documents/React-practices/Pokemon-proyect/landing-pokemon/src/components/navbar/NavbarResponsive.tsx">
+        <metrics statements="10" coveredstatements="8" conditionals="2" coveredconditionals="1" methods="3" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="15" count="0" type="stmt"/>
+        <line num="20" count="0" type="stmt"/>
+        <line num="30" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="components.pokemons">
+      <metrics statements="28" coveredstatements="28" conditionals="10" coveredconditionals="8" methods="5" coveredmethods="5"/>
+      <file name="PokemonCard.tsx" path="/Users/alexander.gallo/Documents/React-practices/Pokemon-proyect/landing-pokemon/src/components/pokemons/PokemonCard.tsx">
+        <metrics statements="22" coveredstatements="22" conditionals="5" coveredconditionals="5" methods="3" coveredmethods="3"/>
+        <line num="1" count="5" type="stmt"/>
+        <line num="2" count="5" type="stmt"/>
+        <line num="3" count="5" type="stmt"/>
+        <line num="5" count="5" type="stmt"/>
+        <line num="6" count="5" type="stmt"/>
+        <line num="7" count="5" type="stmt"/>
+        <line num="8" count="5" type="stmt"/>
+        <line num="15" count="5" type="stmt"/>
+        <line num="17" count="5" type="stmt"/>
+        <line num="18" count="8" type="stmt"/>
+        <line num="20" count="8" type="cond" truecount="1" falsecount="0"/>
+        <line num="21" count="2" type="stmt"/>
+        <line num="24" count="6" type="stmt"/>
+        <line num="25" count="6" type="stmt"/>
+        <line num="26" count="6" type="cond" truecount="2" falsecount="0"/>
+        <line num="28" count="6" type="stmt"/>
+        <line num="30" count="6" type="stmt"/>
+        <line num="31" count="1" type="stmt"/>
+        <line num="32" count="1" type="stmt"/>
+        <line num="35" count="6" type="stmt"/>
+        <line num="43" count="1" type="stmt"/>
+        <line num="63" count="5" type="stmt"/>
+      </file>
+      <file name="PokemonsGrid.tsx" path="/Users/alexander.gallo/Documents/React-practices/Pokemon-proyect/landing-pokemon/src/components/pokemons/PokemonsGrid.tsx">
+        <metrics statements="6" coveredstatements="6" conditionals="5" coveredconditionals="3" methods="2" coveredmethods="2"/>
+        <line num="2" count="4" type="stmt"/>
+        <line num="3" count="4" type="stmt"/>
+        <line num="9" count="4" type="cond" truecount="0" falsecount="1"/>
+        <line num="10" count="4" type="stmt"/>
+        <line num="13" count="6" type="stmt"/>
+        <line num="19" count="4" type="stmt"/>
+      </file>
+    </package>
+    <package name="components.progressBar">
+      <metrics statements="4" coveredstatements="4" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1"/>
+      <file name="ProgressBar.tsx" path="/Users/alexander.gallo/Documents/React-practices/Pokemon-proyect/landing-pokemon/src/components/progressBar/ProgressBar.tsx">
+        <metrics statements="4" coveredstatements="4" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1"/>
+        <line num="1" count="3" type="stmt"/>
+        <line num="7" count="3" type="stmt"/>
+        <line num="8" count="3" type="stmt"/>
+        <line num="22" count="3" type="stmt"/>
+      </file>
+    </package>
+    <package name="components.sections.aboutPokemon">
+      <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+      <file name="AboutPokemon.tsx" path="/Users/alexander.gallo/Documents/React-practices/Pokemon-proyect/landing-pokemon/src/components/sections/aboutPokemon/AboutPokemon.tsx">
+        <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="2" count="2" type="stmt"/>
+        <line num="8" count="2" type="stmt"/>
+        <line num="9" count="2" type="stmt"/>
+        <line num="26" count="3" type="stmt"/>
+        <line num="34" count="2" type="stmt"/>
+      </file>
+    </package>
+    <package name="components.sections.findPokemon">
+      <metrics statements="11" coveredstatements="10" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="FindPokemon.tsx" path="/Users/alexander.gallo/Documents/React-practices/Pokemon-proyect/landing-pokemon/src/components/sections/findPokemon/FindPokemon.tsx">
+        <metrics statements="11" coveredstatements="10" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="2" count="2" type="stmt"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="4" count="2" type="stmt"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="7" count="8" type="stmt"/>
+        <line num="9" count="8" type="cond" truecount="0" falsecount="1"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="13" count="8" type="stmt"/>
+        <line num="15" count="8" type="stmt"/>
+        <line num="29" count="2" type="stmt"/>
+      </file>
+    </package>
+    <package name="components.sections.infoCommunity">
+      <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="InfoCommunity.tsx" path="/Users/alexander.gallo/Documents/React-practices/Pokemon-proyect/landing-pokemon/src/components/sections/infoCommunity/InfoCommunity.tsx">
+        <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="38" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="components.sections.infoLandingPage">
+      <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="InfoLandingPage.tsx" path="/Users/alexander.gallo/Documents/React-practices/Pokemon-proyect/landing-pokemon/src/components/sections/infoLandingPage/InfoLandingPage.tsx">
+        <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="36" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="components.sections.notFoundFavorites">
+      <metrics statements="18" coveredstatements="18" conditionals="23" coveredconditionals="20" methods="4" coveredmethods="4"/>
+      <file name="NotFoundFavorites.tsx" path="/Users/alexander.gallo/Documents/React-practices/Pokemon-proyect/landing-pokemon/src/components/sections/notFoundFavorites/NotFoundFavorites.tsx">
+        <metrics statements="18" coveredstatements="18" conditionals="23" coveredconditionals="20" methods="4" coveredmethods="4"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="2" count="2" type="stmt"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="5" count="2" type="stmt"/>
+        <line num="8" count="2" type="stmt"/>
+        <line num="10" count="2" type="stmt"/>
+        <line num="11" count="3" type="stmt"/>
+        <line num="13" count="3" type="stmt"/>
+        <line num="17" count="3" type="stmt"/>
+        <line num="18" count="3" type="cond" truecount="1" falsecount="0"/>
+        <line num="19" count="3" type="stmt"/>
+        <line num="22" count="3" type="stmt"/>
+        <line num="23" count="4" type="stmt"/>
+        <line num="24" count="4" type="stmt"/>
+        <line num="25" count="4" type="cond" truecount="6" falsecount="2"/>
+        <line num="30" count="3" type="stmt"/>
+        <line num="42" count="4" type="stmt"/>
+        <line num="67" count="2" type="stmt"/>
+      </file>
+    </package>
+    <package name="components.statsProgress">
+      <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+      <file name="StatsProgress.tsx" path="/Users/alexander.gallo/Documents/React-practices/Pokemon-proyect/landing-pokemon/src/components/statsProgress/StatsProgress.tsx">
+        <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="2" count="2" type="stmt"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="9" count="2" type="stmt"/>
+        <line num="10" count="2" type="stmt"/>
+        <line num="13" count="2" type="stmt"/>
+        <line num="27" count="2" type="stmt"/>
+      </file>
+    </package>
+    <package name="components.swiper">
+      <metrics statements="14" coveredstatements="13" conditionals="6" coveredconditionals="3" methods="4" coveredmethods="3"/>
+      <file name="Swiper.tsx" path="/Users/alexander.gallo/Documents/React-practices/Pokemon-proyect/landing-pokemon/src/components/swiper/Swiper.tsx">
+        <metrics statements="14" coveredstatements="13" conditionals="6" coveredconditionals="3" methods="4" coveredmethods="3"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="2" count="2" type="stmt"/>
+        <line num="8" count="2" type="stmt"/>
+        <line num="14" count="2" type="stmt"/>
+        <line num="15" count="4" type="stmt"/>
+        <line num="17" count="4" type="stmt"/>
+        <line num="24" count="4" type="stmt"/>
+        <line num="26" count="4" type="stmt"/>
+        <line num="27" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="30" count="4" type="stmt"/>
+        <line num="31" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="34" count="4" type="stmt"/>
+        <line num="40" count="16" type="stmt"/>
+        <line num="51" count="2" type="stmt"/>
+      </file>
+    </package>
+    <package name="components.toolTip">
+      <metrics statements="8" coveredstatements="7" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="2"/>
+      <file name="ToolTip.tsx" path="/Users/alexander.gallo/Documents/React-practices/Pokemon-proyect/landing-pokemon/src/components/toolTip/ToolTip.tsx">
+        <metrics statements="8" coveredstatements="7" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="2"/>
+        <line num="1" count="7" type="stmt"/>
+        <line num="2" count="7" type="stmt"/>
+        <line num="9" count="7" type="stmt"/>
+        <line num="10" count="10" type="stmt"/>
+        <line num="12" count="10" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="31" count="7" type="stmt"/>
+      </file>
+    </package>
+    <package name="context">
+      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="PokemonsContext.tsx" path="/Users/alexander.gallo/Documents/React-practices/Pokemon-proyect/landing-pokemon/src/context/PokemonsContext.tsx">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="5" type="stmt"/>
+        <line num="16" count="5" type="stmt"/>
+      </file>
+    </package>
+    <package name="hooks">
+      <metrics statements="56" coveredstatements="53" conditionals="7" coveredconditionals="6" methods="16" coveredmethods="16"/>
+      <file name="useFetchPokeapi.ts" path="/Users/alexander.gallo/Documents/React-practices/Pokemon-proyect/landing-pokemon/src/hooks/useFetchPokeapi.ts">
+        <metrics statements="23" coveredstatements="20" conditionals="2" coveredconditionals="1" methods="5" coveredmethods="5"/>
+        <line num="1" count="6" type="stmt"/>
+        <line num="3" count="6" type="stmt"/>
+        <line num="16" count="13" type="stmt"/>
+        <line num="21" count="13" type="stmt"/>
+        <line num="22" count="6" type="stmt"/>
+        <line num="25" count="13" type="stmt"/>
+        <line num="26" count="4" type="stmt"/>
+        <line num="32" count="13" type="stmt"/>
+        <line num="33" count="6" type="cond" truecount="1" falsecount="0"/>
+        <line num="34" count="2" type="stmt"/>
+        <line num="39" count="2" type="stmt"/>
+        <line num="42" count="4" type="stmt"/>
+        <line num="44" count="4" type="stmt"/>
+        <line num="45" count="4" type="stmt"/>
+        <line num="47" count="2" type="cond" truecount="0" falsecount="1"/>
+        <line num="48" count="0" type="stmt"/>
+        <line num="57" count="0" type="stmt"/>
+        <line num="60" count="2" type="stmt"/>
+        <line num="62" count="2" type="stmt"/>
+        <line num="68" count="2" type="stmt"/>
+        <line num="70" count="0" type="stmt"/>
+        <line num="82" count="13" type="stmt"/>
+        <line num="85" count="6" type="stmt"/>
+      </file>
+      <file name="useForm.ts" path="/Users/alexander.gallo/Documents/React-practices/Pokemon-proyect/landing-pokemon/src/hooks/useForm.ts">
+        <metrics statements="14" coveredstatements="14" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="6"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="5" count="9" type="stmt"/>
+        <line num="6" count="9" type="stmt"/>
+        <line num="8" count="9" type="stmt"/>
+        <line num="9" count="3" type="stmt"/>
+        <line num="11" count="3" type="stmt"/>
+        <line num="18" count="9" type="stmt"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="22" count="9" type="stmt"/>
+        <line num="23" count="8" type="stmt"/>
+        <line num="24" count="1" type="stmt"/>
+        <line num="27" count="8" type="stmt"/>
+        <line num="31" count="9" type="stmt"/>
+        <line num="40" count="2" type="stmt"/>
+      </file>
+      <file name="usePokemonFiltered.ts" path="/Users/alexander.gallo/Documents/React-practices/Pokemon-proyect/landing-pokemon/src/hooks/usePokemonFiltered.ts">
+        <metrics statements="19" coveredstatements="19" conditionals="5" coveredconditionals="5" methods="5" coveredmethods="5"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="15" count="4" type="stmt"/>
+        <line num="17" count="4" type="stmt"/>
+        <line num="21" count="4" type="stmt"/>
+        <line num="23" count="4" type="stmt"/>
+        <line num="24" count="2" type="stmt"/>
+        <line num="25" count="2" type="cond" truecount="5" falsecount="0"/>
+        <line num="26" count="1" type="stmt"/>
+        <line num="28" count="2" type="stmt"/>
+        <line num="32" count="2" type="stmt"/>
+        <line num="37" count="2" type="stmt"/>
+        <line num="40" count="4" type="stmt"/>
+        <line num="41" count="2" type="stmt"/>
+        <line num="44" count="4" type="stmt"/>
+        <line num="52" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="utils.pokemons">
+      <metrics statements="11" coveredstatements="11" conditionals="6" coveredconditionals="5" methods="5" coveredmethods="5"/>
+      <file name="favoritePokemon.ts" path="/Users/alexander.gallo/Documents/React-practices/Pokemon-proyect/landing-pokemon/src/utils/pokemons/favoritePokemon.ts">
+        <metrics statements="11" coveredstatements="11" conditionals="6" coveredconditionals="5" methods="5" coveredmethods="5"/>
+        <line num="3" count="4" type="stmt"/>
+        <line num="5" count="7" type="stmt"/>
+        <line num="7" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="9" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="16" count="2" type="stmt"/>
+        <line num="19" count="7" type="stmt"/>
+        <line num="20" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="23" count="7" type="stmt"/>
+        <line num="29" count="4" type="stmt"/>
+      </file>
+    </package>
+    <package name="utils.styles">
+      <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="buttonStyles.ts" path="/Users/alexander.gallo/Documents/React-practices/Pokemon-proyect/landing-pokemon/src/utils/styles/buttonStyles.ts">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="3" count="9" type="stmt"/>
+        <line num="11" count="9" type="stmt"/>
+        <line num="20" count="9" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>

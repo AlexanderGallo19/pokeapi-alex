@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import useForm from "./useForm";
-import useFetchPopkeapi from "./useFetchPopkeapi";
 import { type PokemonsResponse } from "../models/pokemon/Pokemons";
 import { SimplePokemon } from "../models/pokemon/SimplePokemon";
+import useFetchPokeapi from "./useFetchPokeapi";
 
 
 const initialState = {
@@ -14,7 +14,7 @@ const usePokemonFiltered = () => {
 
 const [pokemonsFiltered, setPokemonsFiltered] = useState<SimplePokemon[]>([]);
 
-  const { data } = useFetchPopkeapi<PokemonsResponse>(
+  const { data } = useFetchPokeapi<PokemonsResponse>(
     "https://pokeapi.co/api/v2/pokemon?limit=100000&offset=0"
   );
 

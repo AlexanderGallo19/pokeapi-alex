@@ -8,6 +8,15 @@ export const buttonPrimary: cssVar= {
     }
 
 
+    export const buttonPrimaryBlue: cssVar= {
+      "--bg-color": "#201E43",
+      "--border": "2px  solid #FFFFFF",
+      "--color": "#FFFFFF",
+      "--font-size": "16px",
+    }
+
+
+
 export const buttonSecondary: cssVar= {
       "--bg-color": "#EEEEEE",
       "--border": "2px  solid #201E43",

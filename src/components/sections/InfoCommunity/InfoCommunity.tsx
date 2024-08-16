@@ -1,4 +1,4 @@
-import Button from "../../button/Button";
+import LinkAction from "../../link/LinkAction";
 import styles from "./InfoCommunity.module.scss";
 
 const urlGitHub = "https://github.com/AlexanderGallo19/pokeapi-alex";
@@ -17,7 +17,7 @@ const InfoCommunity = () => {
             Join the UNITE community, go clone the repo and feel free to add
             whatever you want
           </p>
-          <Button
+          <LinkAction
             children="Pokemon GO"
             config={{
               variant: "buttonPrimary",

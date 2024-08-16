@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { type Links } from "../../models/links.model";
 import NavbarResponsive from "./NavbarResponsive";
 import styles from "./Navbar.module.scss";
+import ToolTip from "../toolTip/ToolTip";
 
 const links: Links[] = [
   {
@@ -14,15 +15,19 @@ const Navbar = () => {
   return (
     <nav className={styles.container}>
       <Link className={styles.container__logo} to={"/"}>
-        <img src="../../../public/img/logo.png" alt="Logo-page" />
+        <ToolTip infoText="Home">
+          <img src="../../../public/img/logo.png" alt="Logo-page" />
+        </ToolTip>
       </Link>
       <Link className={styles.container__logoresponsive} to={"/"}>
-        <img src="../../../public/img/pokeball.png" alt="Logo-page" />
+        <img
+          src="../../../public/img/pokeball.png"
+          alt="Logo-page-responsive"
+        />
       </Link>
       <ul className={styles.container__ul}>
         <Link className={styles.container__ul_linkpokemons} to={"/pokemons"}>
-          {" "}
-          Find your pokemon{" "}
+          Find your pokemon
         </Link>
         {links.map((link) => (
           <Link

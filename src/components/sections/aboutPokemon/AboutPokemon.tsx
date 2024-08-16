@@ -8,16 +8,16 @@ interface Props {
 const AboutPokemon = ({ pokemon }: Props) => {
   return (
     <div className={styles.container}>
-      <h2> About </h2>
+      <h2>About</h2>
       <div className={styles.container__info}>
         <div className={styles.container__info_weight}>
-          <p> Weight </p>
-          <span> {pokemon.weight} </span>
+          <p>Weight</p>
+          <span>{pokemon.weight}</span>
         </div>
         <hr />
         <div className={styles.container__info_height}>
           <p> Height </p>
-          <span> {pokemon.height} </span>
+          <span>{pokemon.height}</span>
         </div>
         <hr />
         <div className={styles.container__info_abilities}>

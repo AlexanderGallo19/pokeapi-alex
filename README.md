@@ -1,6 +1,6 @@
 # Poke API Landing Page
 
-This project is build with Vite + React-Typescript, the pokeapi was used to obtain obtain information and put it in a responsive desing that includes a Landing page, pokemon page with pagination and page with relevant information about each pokemon
+This project is build with Vite + React-Typescript, the pokeapi was used to obtain information and put it in a responsive desing that includes a Landing page, pokemon page with pagination and page with relevant information about each pokemon
 
 ## Steps to run this project
 

@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import useFetchPopkeapi from "../../hooks/useFetchPopkeapi";
+import useFetchPokeapi from "../../hooks/useFetchPokeapi";
 import { PokemonProps } from "../../models/pokemon/pokemon";
 import Swiper from "../../components/swiper/Swiper";
 import AboutPokemon from "../../components/sections/aboutPokemon/AboutPokemon";
@@ -9,7 +9,7 @@ import styles from "./PokemonPage.module.scss";
 const PokemonPage = () => {
   const { id } = useParams();
 
-  const { data, isLoading } = useFetchPopkeapi<PokemonProps>(
+  const { data, isLoading } = useFetchPokeapi<PokemonProps>(
     `https://pokeapi.co/api/v2/pokemon/${id}`
   );
 

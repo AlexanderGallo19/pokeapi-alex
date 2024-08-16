@@ -8,6 +8,7 @@ const ProgressBar = ({ baseStat }: Props) => {
   return (
     <div
       className={styles.container}
+      data-testid="container"
       style={{ width: baseStat > 100 ? `${baseStat}%` : "100%" }}
     >
       <div

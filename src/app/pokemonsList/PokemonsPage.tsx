@@ -1,7 +1,7 @@
 import { useCallback, useContext, useEffect, useState } from "react";
 import PokemonsGrid from "../../components/pokemons/PokemonsGrid";
 import FindPokemon from "../../components/sections/findPokemon/FindPokemon";
-import useFetchPopkeapi from "../../hooks/useFetchPopkeapi";
+import useFetchPokeapi from "../../hooks/useFetchPokeapi";
 import { type SimplePokemon } from "../../models/pokemon/SimplePokemon";
 import { type PokemonsResponse } from "../../models/pokemon/Pokemons";
 import { PokemonsContext } from "../../context/PokemonsContext";
@@ -27,7 +27,7 @@ const PokemonsPage = () => {
     setOffsetPagination(offsetPagination + OFFSET);
   }, [offsetPagination, setOffsetPagination]);
 
-  const { data, isLoading } = useFetchPopkeapi<PokemonsResponse>(
+  const { data, isLoading } = useFetchPokeapi<PokemonsResponse>(
     `https://pokeapi.co/api/v2/pokemon?limit=16&offset=${offsetPagination}`
   );
 

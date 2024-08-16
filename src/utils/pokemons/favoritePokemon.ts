@@ -1,6 +1,6 @@
 import { SimplePokemon } from "../../models/pokemon/SimplePokemon"
 
-const useFavoritePokemon = () => {
+const FavoritePokemon = () => {
 
     const onToggleFavorite = (pokemon: SimplePokemon) => {
 
@@ -26,6 +26,4 @@ const useFavoritePokemon = () => {
   }
 }
 
-export default useFavoritePokemon
-
-// Mover a utils 
+export default FavoritePokemon

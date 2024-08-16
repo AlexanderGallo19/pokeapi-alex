@@ -41,7 +41,7 @@ const Swiper = ({ pokemon }: Props) => {
           {currentImage === index && <img src={image} alt={pokemon.name} />}
         </div>
       ))}
-      <button onClick={handleNextImage}>
+      <button onClick={handleNextImage} data-testid="next-button">
         <IoChevronForwardCircleOutline />
       </button>
     </div>

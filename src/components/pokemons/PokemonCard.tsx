@@ -1,10 +1,11 @@
 import { useContext } from "react";
 import { IoHeartOutline, IoHeart } from "react-icons/io5";
-import Button from "../button/Button";
-import { type SimplePokemon } from "../../models/pokemon/SimplePokemon";
-import useFavoritePokemon from "../../utils/pokemons/favoritePokemon";
 import { PokemonsContext } from "../../context/PokemonsContext";
+import FavoritePokemon from "../../utils/pokemons/favoritePokemon";
+import { type SimplePokemon } from "../../models/pokemon/SimplePokemon";
+import ToolTip from "../toolTip/ToolTip";
 import styles from "./PokemonCard.module.scss";
+import LinkAction from "../link/LinkAction";
 
 interface Prop {
   pokemon: SimplePokemon;
@@ -24,7 +25,7 @@ const PokemonCard = ({ pokemon }: Prop) => {
   const pokemonId = Number(pokemon.id);
   const isFavorite = favoritesState.favorite[pokemonId] || false;
 
-  const { onToggleFavorite } = useFavoritePokemon();
+  const { onToggleFavorite } = FavoritePokemon();
 
   const handleFavoritePokemon = (pokemon: SimplePokemon) => {
     onToggleFavorite(pokemon);
@@ -37,15 +38,18 @@ const PokemonCard = ({ pokemon }: Prop) => {
         <img src={`${URL_IMAGE}${pokemon.id}.svg`} alt={pokemon.name} />
       </div>
       <div className={styles.container__title}>
-        <p> {pokemon.name} </p>
+        <p>{pokemon.name}</p>
         <div
           onClick={() => handleFavoritePokemon(pokemon)}
+          data-testid="favorite-icon"
           className={styles.container__title_icon}
         >
-          {!isFavorite ? <IoHeartOutline /> : <IoHeart />}
+          <ToolTip infoText="Add to favorite">
+            {!isFavorite ? <IoHeartOutline /> : <IoHeart />}
+          </ToolTip>
         </div>
       </div>
-      <Button
+      <LinkAction
         children="See details"
         config={{
           variant: "buttonSecondary",

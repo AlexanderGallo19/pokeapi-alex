@@ -1,4 +1,4 @@
-import Button from "../../button/Button";
+import LinkAction from "../../link/LinkAction";
 import styles from "./InfoLandingPage.module.scss";
 
 const InfoLandingPage = () => {
@@ -15,7 +15,7 @@ const InfoLandingPage = () => {
       <div className={styles.container__description}>
         <div className={styles.container__description_button}>
           <p>Select your favorite pokemon and explore its abilities</p>
-          <Button
+          <LinkAction
             children="See Pokemons"
             config={{
               variant: "buttonPrimary",
