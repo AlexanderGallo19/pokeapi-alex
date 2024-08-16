@@ -2,7 +2,9 @@
    "compilerOptions": {
     "esModuleInterop": true,
     "types": ["node", "jest", "@testing-library/jest-dom"],
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "outDir": "./dist",
+    "rootDir": "./"
   },
   "include": ["src/**/*.ts", "src/**/*.tsx", "test/**/*"],
   "exclude": ["node_modules"],
